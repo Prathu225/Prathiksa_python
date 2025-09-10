@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 def scrape_headlines(url):
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Handle HTTP errors
+        response.raise_for_status()  
         soup = BeautifulSoup(response.text, "html.parser")
 
         print("📰 Latest Headlines:\n")
