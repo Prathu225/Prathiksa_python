@@ -7,7 +7,7 @@ def scrape_headlines(url):
         response.raise_for_status()  
         soup = BeautifulSoup(response.text, "html.parser")
 
-        print("📰 Latest Headlines:\n")
+        print(" Latest Headlines:\n")
 
         # Example: scraping <h2> tags (common in news sites)
         headlines = soup.find_all("h2")
